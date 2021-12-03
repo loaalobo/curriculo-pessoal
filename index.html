@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Lorena Lobo">
+    <title>Currículo Lorena</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="footer.css">
+</head>
+<body>
+    <header>
+        <div>
+            <img src="fotoperfil.png" alt="Selfie de uma mulher sorrindo com roupa de frio em um jardim com folhas caídas no chão">
+        </div>
+        <div>
+            <h1>Currículo Lorena Lobo</h1>
+            <nav>
+                <ul>
+                    <li><a href="#secao-sobre-mim">Sobre mim</a></li>
+                    <li><a href="#secao-foco">Meu foco</a></li>
+                    <li><a href="#secao-contato">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="secao-sobre-mim">
+            <h2>Sobre mim</h2>
+            <p>Sou bacharel em Direito e atuei como advogada durante cinco anos. Essa experiência me ajudou a desenvolver a capacidade de análise e solução de problemas, além de habilidades interpessoais. Também cursei Artes Visuais, mas não cheguei a graduar. Foram quase dois anos de muito aprendizado, que agregaram bastante ao meu repertório de conhecimentos sobre arte e design. Em 2020 dei início a transição de carreira para a área de Tecnologia, com foco em desenvolvimento web (fiz alguns cursos livres e o Bootcamp HTML Web Developer da Digital Innovation One). Em abril de 2021, optei por uma nova graduação e estou cursando Análise e Desenvolvimento de Sistemas. Atualmente faço estágio como desenvolvedora na Startup Lead Applied Solutions, encubada no Ifes campus Serra/ES. Trabalhamos no desenvolvimento de soluções inovadoras de identificação de pessoas que levem segurança, agilidade e conforto aos usuários.</p>
+        </section>
+
+        <section id="secao-foco">
+            <h2>Meu foco</h2>
+            <p>Atualmente tenho me dedicado exclusivamente ao HTML, CSS e Javascript. Acredito que explorar a fundo essas tecnologias e linguagem de programação, respectivamente, vai me dá mais segurança para ir atrás daquilo que eu realmente desejo, uma vaga de desenvolvedora frontend júnior.</p>
+        </section>
+
+        <section id="secao-contato">
+            <h2>Contato</h2>
+            <p>Caso deseje informações adicionais, preencha o formulário a seguir com os seus dados que entrarei em contato assim que possível.</p>
+            <form method="post" action="mailto:lorena.aalobo@gmail.com">
+                <label for="name">Nome: </label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="phone">Telefone: </label>
+                <input type="tel" id="phone" name="phone">
+
+                <label for="email">E-mail: </label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="msg">Mensagem: </label>
+                <textarea name="msg" id="msg" cols="30" rows="10" required></textarea>
+
+                <input type="button" value="Enviar" id="button" onclick="alertaForm()">
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy;Lorena Lobo</p>
+        <p>Desenvolvido em 02/12/2021</p>
+    </footer>
+
+    <script>
+        function alertaForm() {
+            window.alert('Alerta: Esse formulário está em construção. Obrigada pela visita!')
+        }
+    </script>
+
+    
+</body>
+</html>
